@@ -1,3 +1,3 @@
-#Jake Albaugh Blog
+#Jake Blog
 
-[On CodePen](http://codepen.io/jakealbaugh/blog)
+[On CodePen](http://codepen.io/jak_e/blog)
