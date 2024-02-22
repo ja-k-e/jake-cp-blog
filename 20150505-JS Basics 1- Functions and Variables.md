@@ -1,6 +1,6 @@
-#Functions and Variables
+# Functions and Variables
 
-###Math.random();
+### Math.random();
 
 I guess I need to explain this if we are going to get anywhere. <code class="stx-js"><span class="var">Math</span>.<span class="mtd">random</span>()</code> gives us a random decimal between <code class="stx-js int">0</span></code> and <code class="stx-js int">1</code>. Got it? Great.
 
@@ -12,7 +12,7 @@ console.log(Math.random());
 The above code would log a random decimal between <code class="stx-js int">0</span></code> and <code class="stx-js int">1</code> to the console.
 
 
-###Storing Variables
+### Storing Variables
 We can extract our random decimal out and store it as a variable.
 
 ```js
@@ -41,7 +41,7 @@ console.log(random_decimal_1 * random_decimal_2);
 
 This is *okay* in theory, but a better choice would be to use a <code class="stx-js key">function</code>.
 
-###Functions
+### Functions
 
 A function can handle our multiplication for us.
 
@@ -69,7 +69,7 @@ console.log(random_decimal);
 ```
 
 
-###Function or variable?
+### Function or variable?
 
 Now, you could write the <code class="stx-js key">function</code> in two ways.
 
@@ -131,7 +131,7 @@ console.log(random_decimal());
 
 As you can see, <code class="stx-js var">cheating</code> is being defined as <code class="stx-js boo">true</code> which sets the <code class="stx-js"><span class="var">random_decimal</span></code> variable as the first <code class="stx-js key">function</code> instead of the second;
 
-###Simplification
+### Simplification
 We could achieve the same result in a more condensed form by putting the <code class="stx-js key">if</code> condition inside of a <code class="stx-js key">function</code>.
 
 ```js
@@ -166,7 +166,7 @@ Here we are passing the <code class="stx-js var">cheating</code> variable into o
 
 Using a <code class="stx-js key">function</code> instead of conditionally defining a variable is super efficient, but either approach can be appropriate depending on the implementation. If the <code class="stx-js key">function</code> is going to be called many times and with different <code class="stx-js var">cheating</code> cases throughout your script, you will want to go with the code above. If you are only calling the <code class="stx-js key">function</code> one time on load and your <code class="stx-js var">cheating</code> condition is permanently defined once, assigning the <code class="stx-js key">function</code> to a variable inside of an <code class="stx-js key">if</code> condition makes more sense.
 
-###Cleaning Up
+### Cleaning Up
 We can make our <code class="stx-js"><span class="mtd">random_decimal</span>()</code> even cleaner by using an inline <code class="stx-js key">if</code> condition.
 
 ```js
@@ -179,7 +179,7 @@ console.log(random_decimal(cheating));
 
 Inside of the `()` is our condition, <code class="stx-js var">c</code>. The `?` indicates that we are running an <code class="stx-js key">if</code> condition. If <code class="stx-js var">c</code> is <code class="stx-js boo">true</code>, it will <code class="stx-js key">return</code> the value <code class="stx-js int">0.123456789</code>. If <code class="stx-js var">c</code> is <code class="stx-js boo">false</code> or <code class="stx-js boo">undefined</code>, the value after the `:` will be returned. In this case, that value would be <code class="stx-js"><span class="var">Math</span>.<span class="mtd">random</span>() * <span class="var">Math</span>.<span class="mtd">random</span>()</code>.
 
-###Before and After
+### Before and After
 
 We started with three lines of code that could multiply two random decimals one time:
 
@@ -201,5 +201,6 @@ return random_decimal(false);
 Fun stuff, right? Keep learning! The sky is the limit!
 
 
-<hr>
-<small>I am Jake Albaugh and am going to write this bio in first person. These days, I write on CodePen because I care more about it and you than I do about my personal site. Read more articles via [my CodePen blog page](http://codepen.io/jakealbaugh/blog/). View my work on [my CodePen profile](http://codepen.io/jakealbaugh/). If you’re a hip millennial, “get at me” on my twitter [@jake_albaugh](http://twitter.com/jake_albaugh).</small>
+---
+
+I am Jake Albaugh and am going to write this bio in first person. These days, I write on CodePen because I care more about it and you than I do about my personal site. Read more articles via [my CodePen blog page](http://codepen.io/jakealbaugh/blog/). View my work on [my CodePen profile](http://codepen.io/jakealbaugh/). If you’re a hip millennial, “get at me” on my twitter [@jake_albaugh](http://twitter.com/jake_albaugh).
