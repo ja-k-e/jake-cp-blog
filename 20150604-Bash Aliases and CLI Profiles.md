@@ -1,4 +1,4 @@
-#The Problem
+# The Problem
 
 As web developers, we often find ourselves running many things in a Command Line Interface (CLI) while working on a project. The time it takes to start everything up can often be a huge pain, especially when we are continually running the same commands over and over. This post will show you how we can use bash aliases to make our commands more terse and reusable as well as show those of you who use iTerm how you can create Profiles to do the startup work for you and Window Arrangements to launch all your project’s Profiles with a single keyboard shortcut.
 
@@ -9,7 +9,7 @@ For the sake of example we will be using Rails, but this can apply to any projec
 > Also, OSx Terminal offers some of the features I will be talking about for iTerm, but not all of them. I recommend [iTerm](https://www.iterm2.com/) since it is free and has the extra features I will be describing in this post.
 
 
-##Redundancy
+## Redundancy
 
 Typically for a Rails app, I have at least three iTerm panes open. One for the server, one for the Rails console, and one ready to run commands in the directory. 
 
@@ -32,7 +32,7 @@ In the technologically-saturated goo we call modern existence, there should not 
 
 <hr>
 
-#Bash Aliases
+# Bash Aliases
 
 Aliases can be defined in many places, but we are going to separate them out into a new file to stay organized. First, we need to create a `.bash_aliases` file in our user directory. This is where we will store our aliases.
 
@@ -63,7 +63,7 @@ fi
 When we “instantiate a CLI session” (open a terminal window), this checks to see if our `.bash_aliases` exists; if it does, it loads it.
 
 
-###Authoring Bash aliases
+### Authoring Bash aliases
 
 Now we can start creating our aliases. Let’s open the `.bash_aliases` file we created earlier.
 
@@ -87,7 +87,7 @@ Save your `.bash_aliases` file, close it, open a new terminal window (needs to b
 
 You should now be looking at your `.bash_aliases` file again in Sublime Text or whatever you specified in your alias definition. See? Simple.
 
-###Change Directory Aliases
+### Change Directory Aliases
 
 Let’s apply what we’ve learned to simplifying our Rails app workflow. Back in our `.bash_aliases` file we can define an alias to help us navigate to our rails\_app project.
 
@@ -121,7 +121,7 @@ In a new CLI session, we can now successfully navigate to our alias directories 
 This is the _exact same thing_ as running `$ cd ~/Development/rails_app`. Easy peasy. But let’s not stop there. 
 
 
-###Flexibile Aliases
+### Flexibile Aliases
 
 We know we will be using aliases all the time now for every project since they’re so amazing, so it is best for us to not duplicate the `~/Development` path every time we create an alias. We’d have to make a change to every alias if we ever moved or renamed the directory. We can fix that with a variable.
 
@@ -142,7 +142,7 @@ alias dev=$DEV_DIR
 Now, if `~/Development/` becomes `~/Projects/Web Development/`, we only need to change one thing in our `.bash_aliases` file.
 
 
-###Simplifying Aliases
+### Simplifying Aliases
 
 We can also simplify more complicated commands with aliases. A perfect example in my case is opening urls with the Canary build of Chrome.
 
@@ -158,7 +158,7 @@ Now in a new CLI session, we can run the following command to open `localhost:30
 ```
 
 
-##Aliases Compounding
+## Aliases Compounding
 
 Here’s the current (condensed) state of our `.bash_aliases` file:
 
@@ -208,9 +208,9 @@ As you might imagine, nesting aliases inside of aliases can become very powerful
 
 <hr>
 
-#Further automation with iTerm
+# Further automation with iTerm
 
-##Profiles
+## Profiles
 
 Both OSx Terminal and iTerm have “Profiles” which can run commands on load. I will be using iTerm.
 
@@ -247,7 +247,7 @@ All three of these Profiles are now available in the Profiles menu in iTerm. If 
   <figcaption>Accessible profiles in iTerm</figcaption>
 </figure>
 
-##Arrangements
+## Arrangements
 
 Once we have opened all three Profiles in panes, tabs, or windows, we can save the layout as a “Window Arrangement” in iTerm, or as a “Group” in OSx Terminal. 
 
@@ -272,7 +272,7 @@ If you want to delete or manage your Window Arrangements, you can find them in P
   <figcaption>Manage Window Arrangements</figcaption>
 </figure>
 
-##Keyboard Shortcuts say what?
+## Keyboard Shortcuts say what?
 
 Now for the magic. We can *map a friggin keyboard shortcut* to the “Restore Window Arrangement” action! This is the only thing we have covered so far that OSx Terminal cannot do. To map the shortcut, we navigate to “Keys” in iTerm Preferences, create a new shortcut, and in the first dropdown select “Select Menu Item...” and in the second dropdown select our arrangement “Rails App” under “Window > Restore Window Arrangement”.
 
@@ -296,6 +296,6 @@ If you made it through this post, wow. Writing this post was extremely simple in
 
 That’s it. No more nonsense. You have more time to work! Go!
 
+---
 
-<hr>
-<small>I am Jake Albaugh and am going to write this bio in first person. These days, I write on CodePen because I care more about it and you than I do about my personal site. Read more articles via [my CodePen blog page](http://codepen.io/jakealbaugh/blog/). View my work on [my CodePen profile](http://codepen.io/jakealbaugh/). If you’re a hip millennial, “get at me” on my twitter [@jake_albaugh](http://twitter.com/jake_albaugh).</small>
+I am Jake Albaugh and am going to write this bio in first person. These days, I write on CodePen because I care more about it and you than I do about my personal site. Read more articles via [my CodePen blog page](http://codepen.io/jakealbaugh/blog/). View my work on [my CodePen profile](http://codepen.io/jakealbaugh/). If you’re a hip millennial, “get at me” on my twitter [@jake_albaugh](http://twitter.com/jake_albaugh).
