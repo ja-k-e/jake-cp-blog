@@ -1,6 +1,6 @@
-#Let’s get Mercator with this ish
+# Let’s get Mercator with this ish
 
-###Maps? Murps?
+### Maps? Murps?
 
 The verdict is out, Sass variable maps are pretty awesome. I am going to pretend I’ve known about them forever so that you think I’m cool. Jaykay, I just started using them.
 
@@ -26,7 +26,7 @@ h1 { color: #FFBB00; }
 ```
 
 
-###Inception
+### Inception
 
 Now maps, being the lovely little things that they are, can be nested for added specificity and better organization:
 
@@ -61,7 +61,7 @@ h1 {
 The inner <code class="stx-css"><span class="fnc">map-get</span></code> grabs our <code class="stx-css"><span class="val">primary</span></code> map, then the last value <code class="stx-css"><span class="val">base</span></code> grabs that <code class="stx-css"><span class="val">primary</span></code> map’s <code class="stx-css"><span class="val">base</span></code> value.
 
 
-###Functions FTW
+### Functions FTW
 
 Functionally, nested maps are awesome. Unfortunately the syntax is a bit...meh. We can fix that nonsense with a <code class="stx-css"><span class="mtd">@function</span></code>:
 
@@ -131,7 +131,7 @@ h1 {
 ```
 
 
-###Simplify ze Defs
+### Simplify ze Defs
 
 Some of you may have noticed and not enjoyed the redundency in our variable maps:
 
@@ -194,7 +194,7 @@ $colors: (
 
 
 
-###When to do any of this
+### When to do any of this
 
 The times I find it best to use a <code class="stx-css mtd">@function</code> like this is when your variable map is a single category of values and justifiably complicated. In addition to color schemes, things like container and device sizes are a great time to use them. Here are a few basic guidelines I’ve formed for myself:
 
@@ -206,7 +206,7 @@ The times I find it best to use a <code class="stx-css mtd">@function</code> lik
   - just make multiple functions per map...if each map is necessary
 
 
-###Whelp, that’s all I got.
+### Whelp, that’s all I got.
 
 We just looked at some helpful ways to harness Sass variable maps and functions. Don’t abuse this stuff or else you’ll trap yourself in a very confusing and verbose corner. Keep it simple and write pretty code.
 
@@ -216,6 +216,6 @@ If you want to see a demo of some of this stuff, I got a tiny (and ugly) playgro
 
 > Credits: I can’t remember with certainty where I was initially exposed to this idea, but I know I read [this article by Erskine Design](http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/) at some point.
 
+---
 
-<hr>
-<small>I am Jake Albaugh and am going to write this bio in first person. These days, I write on CodePen because I care more about it and you than I do about my personal site. Read more articles via [my CodePen blog page](http://codepen.io/jakealbaugh/blog/). View my work on [my CodePen profile](http://codepen.io/jakealbaugh/). If you’re a hip millennial, “get at me” on my twitter [@jake_albaugh](http://twitter.com/jake_albaugh).</small>
+I am Jake Albaugh and am going to write this bio in first person. These days, I write on CodePen because I care more about it and you than I do about my personal site. Read more articles via [my CodePen blog page](http://codepen.io/jakealbaugh/blog/). View my work on [my CodePen profile](http://codepen.io/jakealbaugh/). If you’re a hip millennial, “get at me” on my twitter [@jake_albaugh](http://twitter.com/jake_albaugh).
