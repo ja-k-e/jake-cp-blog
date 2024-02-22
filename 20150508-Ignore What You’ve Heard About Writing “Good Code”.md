@@ -1,6 +1,6 @@
 > Disclaimer: I am not advocating for ignorance towards best practice in production code.
 
-##Good Grades
+## Good Grades
 
 I always sucked at school. I got by, but not by studying. I hacked classroom discussions—parsing other people’s opinions to form my own, solving algebraic equations by looking it up in the book and not by memorizing the formulae. This is preceisely why I failed miserably in chemistry. Everything in basic chemistry is fact and memory; no logic, no opinions. 
 
@@ -19,7 +19,7 @@ In order to be ready for change, you need to be humble. You can be confident, bu
 You may not yet write “good code”, but if you can recognize your limits and persevere in learning, you are already a “good” developer.
 
 
-##Different Strokes for Learning Folks
+## Different Strokes for Learning Folks
 
 I, like some of you, hacked the academic system to get (some) passing grades. We learn differently than others. There is nothing wrong with that. You are not an idiot if you don’t read books for fun. If you do, great—you have a leg up on yourself.
 
@@ -30,18 +30,18 @@ Here is how you learn first: ignore everything you don’t understand, pick some
 Fitting an orchard’s worth of apples into your mouth is an impossible task, especially if they are already growing back by the time you cram the last one in your pie hole. It is futile. Stop being discouraged that you can’t handle the *literally* impossible task of learning everything at once and concern yourself with what you *can* handle. That’s all that matters. You’ll be killing it in no time.
 
 
-##What Before Why
+## What Before Why
 
 Figure out *what* you are doing before wasting any energy figuring out *why* you are doing it. I cannot answer why I never eat sweets until I understand that saltine crackers are not sweets. If you hop on StackOverflow and copy some random dude’s jQuery form validation, you’ll waste hours wondering why it breaks if you don’t understand that jQuery is a Javascript library that you need to include on your page in order for it to work. Don’t be insecure about how little you know; it’s okay, all of us Google everything.
 
->“Ok Google, who is Jake Weary?”
+> “Ok Google, who is Jake Weary?”
 
 Do not get me wrong, it is very important to understand *why* certain things work, but you’ll just be cart-before-the-horsing around if you don’t know *what* you are doing. It is ok to copy/paste a Frankenstein page together, as long as you spend the time afterwards getting to know why it works. If not, Frank will inevitably get very angry and break things. 
 
 Here’s the simplest way to find out why something works: remove it and see what changes. Now you know what it does. Now remove little bits of it at a time and see what changes. If it’s Javascript, you may get a console error. If you get an error, Google it. Then notice how 50,000 other people have asked the same question. Breathe. We’re all on the same team here. If it is CSS, Google the declaration in question and see what it does. Maybe removing it doesn’t do anything because it is no longer necessary. Maybe it is only there for a Firefox fix. Be curious. Take it all in. Mastery comes from steady and prolonged exposure, not from some inherent omniscience.
 
 
-##You will write bad code
+## You will write bad code
 
 You need to get used to the fact that you’ll suck at anything the first 10+ times. Don’t let bad code get you down. In fact, *assume* the new code you are writing is terrible. When it breaks or when you get trapped, you will know where to look. When you fix it, you will see what you did wrong. If what you write turns out to be the correct approach, pat yourself on the back and recognize that your progress is unfolding before your very eyes. 
 
@@ -50,7 +50,7 @@ Don’t compare yourself to someone else unless you are trying to learn a better
 You will always look back and see the imperfections in everything you make. This is because you are growing. If clients only knew how much we hate what we built them six months after the fact. It’s ok. Don’t idolize perfection. A “perfect” website remains unfinished because you are constantly tweaking everything. I've hated my two year-old personal website for one year and 364 days. Learn how to move forward and grow, not how to perfect. Apply what you’ve learned to the next thing.
 
 
-##Refinement
+## Refinement
 
 Over time, you will learn that many things that you were once terrified of become relevant and manageable. When you get overwhelmingly lost in your styles for a complex web site, you learn Sass. When your site takes eight seconds to render, you research techniques for speeding up your page load. 
 
@@ -61,6 +61,6 @@ If you don’t understand CSS, your Sass-processed code will be terrible. If you
 
 Rest easy and keep going. We’ve all been there—*are* there. “Good code” will come with time.
 
+---
 
-<hr>
-<small>I am Jake Albaugh and am going to write this bio in first person. These days, I write on CodePen because I care more about it and you than I do about my personal site. Read more articles via [my CodePen blog page](http://codepen.io/jakealbaugh/blog/). View my work on [my CodePen profile](http://codepen.io/jakealbaugh/). If you’re a hip millennial, “get at me” on my twitter [@jake_albaugh](http://twitter.com/jake_albaugh).</small>
+I am Jake Albaugh and am going to write this bio in first person. These days, I write on CodePen because I care more about it and you than I do about my personal site. Read more articles via [my CodePen blog page](http://codepen.io/jakealbaugh/blog/). View my work on [my CodePen profile](http://codepen.io/jakealbaugh/). If you’re a hip millennial, “get at me” on my twitter [@jake_albaugh](http://twitter.com/jake_albaugh).
