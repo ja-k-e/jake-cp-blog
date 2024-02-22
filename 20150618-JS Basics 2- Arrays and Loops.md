@@ -1,6 +1,6 @@
 In [JS Basics 1](http://codepen.io/jakealbaugh/blog/js-basics-1-functions-and-variables/) we discussed `functions` and `variables` and how they relate to each other. In this post, we will focus on arrays and how we can iterate over them with `for` and `while` loops.
 
-##The problem
+## The problem
 We have a series of numbers.
 
 ```js
@@ -18,7 +18,7 @@ var sum = num_1 + num_2 + num_3 + num_4 + num_5; // = 150
 This works, but could be much more dynamic. Here we are explicitly adding up all of our numbers. What happens when we have six numbers? Four? Zero? We would need to change our code drastically because it has no flexibility.
 
 
-##Arrays
+## Arrays
 Arrays are how we store collections of data in Javascript. Our series of numbers would be best described and most efficiently stored in an array:
 
 ```js
@@ -37,7 +37,7 @@ var sum = nums[0] + nums[1] + nums[2] + nums[3] + nums[4]; // = 150
 
 As you can see, we can run the same expression with our array as we did with the individual variables. This is a *slight* improvement because we are storing our data more efficiently, but there is still a hard-coded reference to each value in the array.
 
-##“For” Loops
+## “For” Loops
 
 We want to be able to add the contents of our `nums` array, no matter how many values are in it. To do this, we can use a `for` loop.
 
@@ -83,7 +83,7 @@ Can you see the difference? We are decrementing instead of incrementing. Note th
 The result of these two loops is exactly the same, but the sequence in which the numbers are processed is different. Depending on what you are doing inside of the loop, decrementing or incrementing may make more sense.
 
 
-##Complexity
+## Complexity
 
 What if we wanted to multiply the last item by the sum of all the other items?
 
@@ -133,7 +133,7 @@ for (var i = (nums.length - 1); i >= 0; i--) {
 In this case, whether or not we are decrementing or incrementing is incredibly important. This illustrates the basic logic behind why you may have a need for a decrementing loop instead of an incrementing one.
 
 
-##Bringing it all together
+## Bringing it all together
 
 Pairing these principles with the array `push` method, we can generate an array of 10 random numbers, and get the average of them.
 
@@ -159,7 +159,7 @@ var avg = sum / nums.length;
 We start with an empty `nums` array to fill with our numbers, define how many numbers we want to generate with `count`, and set the initial `sum` to `0`. Inside of our loop, we generate a random number, add it to the array, and increase the `sum` by its value. This repeats `10` times. When we define the `avg` after the loop, `sum` will equal the sum of the array of random `nums`. So we divide it by the length of the `nums` array (we could also divide by `count`) to get the average.
 
 
-##"While" Loops
+## "While" Loops
 
 If you can wrap your head around the logic of `for` loops, `while` loops should come fairly easily.
 
@@ -183,7 +183,7 @@ By the time our loop hits the `if` condition, it has been incremented to the val
 The correct answer is that it would run an extra time and log `undefined` for the last value. Can you figure out why?
 
 
-##Manipulating arrays
+## Manipulating arrays
 
 I can’t finish this post without saying something about array manipulation. I couldn’t find a better place to put it, so it’s going here.
 
@@ -242,6 +242,6 @@ As you can see, manipulating arrays with loops is quite useful even though it ca
 
 Keep at it!
 
+---
 
-<hr>
-<small>I am Jake Albaugh and am going to write this bio in first person. These days, I write on CodePen because I care more about it and you than I do about my personal site. Read more articles via [my CodePen blog page](http://codepen.io/jakealbaugh/blog/). View my work on [my CodePen profile](http://codepen.io/jakealbaugh/). Or if you’re a hip millennial, “get at me” on my twitter [@jake_albaugh](http://twitter.com/jake_albaugh).</small>
+I am Jake Albaugh and am going to write this bio in first person. These days, I write on CodePen because I care more about it and you than I do about my personal site. Read more articles via [my CodePen blog page](http://codepen.io/jakealbaugh/blog/). View my work on [my CodePen profile](http://codepen.io/jakealbaugh/). Or if you’re a hip millennial, “get at me” on my twitter [@jake_albaugh](http://twitter.com/jake_albaugh).
