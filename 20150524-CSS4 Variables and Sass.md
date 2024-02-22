@@ -1,9 +1,9 @@
-#“Houston, we will probably end up totally having a problem.”
+# “Houston, we will probably end up totally having a problem.”
 
 This might seem a bit premature, however I couldn’t help but start to think about how [the new variable spec in CSS4](http://dev.w3.org/csswg/css-variables/) will inevitably bump uglies with our Sass tendencies in the near future. I’ve come up with an idea that will hopefully marry these two in an efficient and practical approach.
 
 
-##The CSS4 Spec
+## The CSS4 Spec
 
 For the uninitiated (me a week ago), new CSS variables are going to look like this:
 
@@ -30,7 +30,7 @@ The variable <code class="stx-css var">--color-background</code> is bound to the
 You can read more on variables in the [W3C Spec](http://dev.w3.org/csswg/css-variables/), or on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables).
 
 
-##Sass
+## Sass
 
 Regardless of whether or not you like the new variable syntax, chances are you already use a pre-processor to manage your variables and would like to continue to do so. Some of you ultra-organized individuals may even make use of variable maps in Sass. 
 
@@ -55,7 +55,7 @@ body {
 Unfortunately the syntax for accessing Sass maps is a bit verbose, which is why some people prefer to use custom functions to access their map variables. Check out [Using Sass functions to access variable maps](http://codepen.io/jakealbaugh/blog/using-sass-functions-to-access-complex-variable-maps/) if you are interested in learning how you can dive deeper into variable maps.
 
 
-##Working together
+## Working together
 
 Just because you may like Sass variable syntax more than the CSS4 spec does not mean that you should just forsake the new spec. If you can refer to a variable in vanilla CSS, you should. The age of redundant hex colors is over! That is exciting. The Chrome inspector will inevitably allow you to change CSS4 variable definitions in-browser and you’ll see the results live update on the page. In the case of colors, that would mean we’d be able to change one variable and have everything that uses that variable change color at once. If we use our old methods, that feature will be useless. If our stylesheets *can* be more descriptive than ever before, they *should* be. 
 
@@ -111,7 +111,7 @@ body {
 }
 ```
 
-##Further Sophistication
+## Further Sophistication
 
 Let’s say we have a complex variable map of sizes that includes both nested maps and top-level values:
 
@@ -246,7 +246,7 @@ The above <code class="stx-css mtd">@each</code> loop will output container size
 }
 ```
 
-##Over the top
+## Over the top
 
 Let’s crank up the funk and groove out to the tune of complexity. Say that there was a case where we wanted to get the true Sass value of the variable instead of the CSS4 selector. To illustrate, I am going to move back to colors.
 
@@ -371,7 +371,7 @@ h1 {
 This level of complexity may not suit everyone, but it is certainly doable if you enjoy writing less code.
 
 
-##Bonanza!
+## Bonanza!
 
 Techniques like this allow us to utilize the power of Sass without having to ignore important advances in CSS. Any Sass we write should always output well-written modern CSS. Just because the W3C implements seemingly competing features into CSS does not mean we need to choose one over the other. Embrace the webs!
 
@@ -384,10 +384,7 @@ Props for making it to the end of this post. Here is everything we have learned,
 
 
 
+---
 
 
-
-
-
-<hr>
-<small>I am Jake Albaugh and am going to write this bio in first person. These days, I write on CodePen because I care more about it and you than I do about my personal site. Read more articles via [my CodePen blog page](http://codepen.io/jakealbaugh/blog/). View my work on [my CodePen profile](http://codepen.io/jakealbaugh/). If you’re a hip millennial, “get at me” on my twitter [@jake_albaugh](http://twitter.com/jake_albaugh).</small>
+I am Jake Albaugh and am going to write this bio in first person. These days, I write on CodePen because I care more about it and you than I do about my personal site. Read more articles via [my CodePen blog page](http://codepen.io/jakealbaugh/blog/). View my work on [my CodePen profile](http://codepen.io/jakealbaugh/). If you’re a hip millennial, “get at me” on my twitter [@jake_albaugh](http://twitter.com/jake_albaugh).
