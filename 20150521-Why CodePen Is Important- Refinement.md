@@ -1,4 +1,4 @@
-#“Coolidge Code”
+# “Coolidge Code”
 
 It is nearly impossible for me to implement a new approach appropriately the first time. The sense of novelty that accompanies the realities of newness can often cloud my judgement. I tend to use new techniques because “I can” rather than because “I should”. This tendency is eerily similar to the scientifically-observed [Coolidge effect](http://en.wikipedia.org/wiki/Coolidge_effect) in nature where:
 
@@ -13,7 +13,7 @@ I realize it may seem a bit off-course to bring up mammalian mating habits in a 
 
 This is precisely what I find myself and others exhibiting around the web; so much so, that I propose the phrase *“Coolidge Code”* to represent any technique being used solely because it is available and in contrast to previously-accepted values.
 
-#Drop Shadows <small>(a “Receptive Partner”)</small>
+# Drop Shadows <small>(a “Receptive Partner”)</small>
 
 When I was first exposed to Photoshop drop shadows, the fact that I could easily create a shadow somehow trumped whether or not the shadow made sense. I either used the default settings or randomly tweaked a few parameters—it was enough to feel pro. 
 
@@ -24,7 +24,7 @@ When I was first exposed to Photoshop drop shadows, the fact that I could easily
 
 Later in life, I saw my “drop shadow technique” in other people’s work, and was able to objectively note how terrible it looked. I had realized that my “skillz” were not actually skills at all—they were flags of ignorance. Thanks to these revelations, over time I eventually learned how to add “tasteful” depth through subtlety in my graphic design work. 
 
-#Box Shadows <small>(returning to old habits)</small>
+# Box Shadows <small>(returning to old habits)</small>
 
 A few years after promising myself I would use drop shadows appropriately and after I had begun learning how to code, `box-shadow` was added to CSS. I, like many other skeuomorphic-crazed individuals, jumped back into my ridiculous shadow abuse for no reason other than “DROP SHADOWS IN CODE OMGZ”. The novelty of it all was so enticing, that I was neglecting everything I had ever learned about design. And it wasn’t just shadows—gradients, textures, rounded corners, transitions—you name it, they were all bastardized into abhorrent manifestations fit for a homemade garage sale sign. 
 
@@ -33,7 +33,7 @@ A few years after promising myself I would use drop shadows appropriately and af
 <figcaption>A Perfectly Subtle Button</figcaption>
 </figure>
 
-#Coolidge Code Abounds
+# Coolidge Code Abounds
 
 *“Coolidge Code”* pervades more than just aesthetic concerns, in UX we have techniques like “parallax scrolling”, “scroll jacking”, or even less-obvious tendencies in our JS frameworks, compilers, and build systems. There is nothing inherently wrong with any of these techniques and advances in technology. The problem lies in many initial implementations during our collective state of “Wow!” where we bastardize these ideas in a sprint of ignorance—like we are wearing a tux as a bathing “suit” to a pool party. 
 
@@ -66,7 +66,7 @@ That is when we bind these ideas to standards which we promise never to depart f
 </figure>
 
 
-#CodePen is for Coolidge Code 
+# CodePen is for Coolidge Code 
 
 Unfortunately, this refinement of taste and reduction of novelty often happens during the course of client work. We “try stuff out” because after all, we need to learn, and there’s no better way to learn than to try. This often results in bad decisions being made in products for good clients. 
 
@@ -74,14 +74,14 @@ Thankfully, CodePen gives us an outlet for much of this nonsense—a place to ru
 
 There are two primary ways to refine on CodePen. **Doing** and **Observing**.
 
-###Doing
+### Doing
 
 **Short Runways**<br>“Starting up” on CodePen takes zero time compared to an average workflow. Blink, and you have Sass, add and drop jQuery in an instant, pull in some random Javascript, fork your own pen to try a different approach. The lowering of these barriers allows you to get to the meat without having to set the table. Make something easily, come back to it instantly and pivot to your heart’s content.
 
 **Private Parties**<br>If you want your CodePen profile to only exhibit work you are confident in, get [CodePen Pro](http://codepen.io/pro/) and save things privately. Be free enough to be a moron. I have a host of private pens that are ugly and embarassing demos of first, second, and third attempts at various techniques. I always try new things out in CodePen well before I attempt to put it in production code. It gives me the room to look back and judge it objectively. I also tend to wait at least a day to publish any pen I have become excited about. Upon reflection, I *always* see at least one thing I missed in the haze of novelty.
 
 
-###Observing
+### Observing
 
 Refining your taste and growing as a dev require continued exposure to both ends of the code quality spectrum. If you see enough bad code, you’ll learn why good code is good and if you see enough good code, you’ll learn why bad code is bad. We all write good code and we all write bad code. CodePen has both.
 
@@ -95,7 +95,7 @@ Often times, I’ll see an approach and be all, “Why did they do it that way? 
 </figure>
 
 
-###Life’s Limits
+### Life’s Limits
 
 **Your Time**<br>Inevitably, you will find yourself having less time to learn because you have so much work to do. That is ok. I often need to make sacrifices and do some experimentation in production code just to get the job done. Take advantage of CodePen when you can. Sometimes I will do bits of actual client work in private pens just to get off the ground. Then I can share the private urls with coworkers and get immediate feedback on approaches without having to set up the core of the project just to start sketching.
 
@@ -103,6 +103,6 @@ Often times, I’ll see an approach and be all, “Why did they do it that way? 
 
 In the meantime, hop on CodePen and keep refining.
 
+---
 
-<hr>
-<small>I am Jake Albaugh and am going to write this bio in first person. These days, I write on CodePen because I care more about it and you than I do about my personal site. Read more articles via [my CodePen blog page](http://codepen.io/jakealbaugh/blog/). View my work on [my CodePen profile](http://codepen.io/jakealbaugh/). If you’re a hip millennial, “get at me” on my twitter [@jake_albaugh](http://twitter.com/jake_albaugh).</small>
+I am Jake Albaugh and am going to write this bio in first person. These days, I write on CodePen because I care more about it and you than I do about [my personal site](http://jakealbaugh.com). Read more articles via [my CodePen blog page](http://codepen.io/jakealbaugh/blog/). View my work on [my CodePen profile](http://codepen.io/jakealbaugh/). Or if you’re a hip millennial, “get at me” on my twitter [@jake_albaugh](http://twitter.com/jake_albaugh).
