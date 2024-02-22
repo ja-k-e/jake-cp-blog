@@ -1,8 +1,8 @@
-#Sublex Regime?
+# Sublex Regime?
 
 If you are anything like me, obfuscated tools like regular expressions are absolutely terrifying. Over the past three years, I have gradually learned enough to be able to increase my speed as a developer. I hope the following can *at least* show you that regex is approachable and if we’re lucky, you can walk away with enough to immediately begin ‘regexting’.
 
-##Why yet another thing to learn?
+## Why yet another thing to learn?
 Because it can help you so damn much. I’ll give you an example. A little while back I was working on a massive codebase for an airline’s web application. The styles were all in LESS. At one point when the site was very small, the original developers started `:extend`-ing styles for pretty much everything. `:extend` can be very helpful, but it can get to a point where it bloats file size more than mixins if you gzip. Some dude on my team figured that out. This meant we needed to replace all instances of `:extend` that were typographic styles, but not ones that weren’t. To add to the problem, `:extend` in LESS is more complex than in Sass. Here’s an example of the various `:extend` scenarios I had to deal with:
 
 ```less
@@ -20,12 +20,12 @@ As you can see, this was a pretty complicated task, especially since there were 
 
 This is why regex is amazing. Manually finding and replacing all those extends would have taken me at least an extra five or six hours of excruciating effort; and any manual slip up would translate into a tiny bug that no one would notice for a long time. If you can test your regex thoroughly, you can be confident that your edits worked and save time. Enough evangelism, let’s get into it.
 
-##The basics.
+## The basics.
 In Sublime’s Find and replace, there is a regex toggle on the far left (next to the Case Sensitive button). This enables you to use regular expressions in your Find commands. You can write an expression, and Sublime will highlight matches in the same way any vanilla search works.
 
 In regex, there are a handful of symbols. I would be lying to you if I said I knew them all, or that you’ll need any of them. What I *will* do is give you a quick breakdown of the meat n’ potatoes you’ll use all the time.
 
-###Quantifiers
+### Quantifiers
 `+` is a wildcard “quantifier”. It states “take whatever you just got, and repeat it one to infinite times.” Since regex can capture literal characters, if I were to write the expression `a+`, it would match any sequence of one to infinite `a`’s. 
 
 ```
@@ -100,7 +100,7 @@ replace: $1 MUFFIN
 Here, our escaped parens are *inside* of the capture group, so they are included in the replacement text.
 
 
-###Finding Non-literal values
+### Finding Non-literal values
 Let’s say we want to match *any* sequence of letters, commonly known as a *word*. In this case, we need to refer to any letter, not just an `a`. For that, we can use a list, defined by wrapping `[]`. `a-z` is a quick way to refer to any lowercase letter.
 
 ```
@@ -127,7 +127,7 @@ replace: $1 MARTIAN
 "abc MARTIAN aBc MARTIAN aB3 MARTIAN"
 ```
 
-###Not finding things
+### Not finding things
 
 In some cases, *not* finding something can be quicker than *yes* finding a ton of things. You can preface a list with `^` to change the list’s meaning to be a collection of things you *don’t* want to find.
 
@@ -149,7 +149,7 @@ Don’t miss the invisible `space` character in our list. Believe it or not, it 
 
 Simmer down, homeslice. Let’s say we have a ton of `dashed-class-names` in our HTML and CSS that we want to be underscores. Just Find `-` and Replace with `_`, right? No. What about CSS properties like `-webkit-transform-origin`? What about hyphened-words in our HTML text? We want to leave those alone. This is a perfect case for regex.
 
-###CSS
+### CSS
 
 In the CSS, we would want to start our match based on the `.` at the beginning of every class name then find everything up to the first `-`.
 
@@ -187,7 +187,7 @@ This expression will only match one instance of dash in a class name, which mean
 
 In all honesty, running this Replace a handful of times with Sublime shortcuts is probably going to take much less time than writing a ridiculously complex (at least I think it would be) expression to do it all in one replace. Let me know if I’m wrong on that. I would love to see an “all in one” solution.
 
-###Gotcha!
+### Gotcha!
 Wait, what about attribute selectors? Stop fussing. We’re getting there. We can get at attribute selectors (ie. `div[class="hello-world"]`) in the same expression as when we grab the HTML.
 
 ```css
@@ -230,7 +230,7 @@ The result is bonafide gold:
 </div>
 ```
 
-###Combo
+### Combo
 Using a `|` pipe character as an `or` operator, we can actually combine both our CSS and HTML expressions:
 
 ```
@@ -241,7 +241,7 @@ replace: $1$2_
 Our Replace needs to include the second group, even though it and the first are separated by the pipe. If a group is empty, the Replace number value is empty as well. You wont get an error or something for referring to an unmatched group.
 
 
-##Bringing it home...
+## Bringing it home...
 What if I told you you could go from underscored to camelCase as well? Using `\u`, it is possible!
 
 ```css
@@ -281,15 +281,15 @@ In our replace, you’ll notice we have `\u` right before our third and sixth ma
 
 Fancy, right?
 
-##Double bonus
+## Double bonus
 If you end up getting decent at regex in Sublime, you’ll find it can help a ton in your Javascript as well. `.match()` and `.replace()` are fantastic little methods and accept regular expressions.
 
-##Parting advice
+## Parting advice
 If you want to get better at or more acquainted with regex, all you need to do is stop being afraid of it. Know that you are capable and just go for it. The best way to learn regex is to find answers to real problems in your day to day work. Keep an eye out for repetitive tasks and ask yourself if you can break it down into a series of replacements. The answer is almost always “yes” if it is repetitive. Keep at it.
 
 I will put this out there, if you have a problem that you think can be solved with regex but don’t know how, put it in the comments and let’s have some `"asdffunasdf".replace(/asdf/g,"")`.
 
-##Research
+## Research
 Here’s some awesome resources.
 
 - [regex101.com](https://regex101.com): An awesome playground for regex. You can even save expressions not unlike CodePen.
@@ -301,10 +301,10 @@ Here’s some awesome resources.
 Keep going, it gets easier and you’ll be saving loads of time in no time.
 
 
-#Curious?
+# Curious?
 Were you wondering if I’d show my LESS `:extend` solution? Ok fine.
 
-##Pass 1
+## Pass 1
 Flag down edge cases where comma-separated selectors each have their own `:extend`:
 
 ```less
@@ -340,7 +340,7 @@ Then I globally searched for `/* @@@`, and manually remade the comma-separated s
 .class-name-4 { ... }
 ```
 
-##Pass 2
+## Pass 2
 The actual replacement for the primary instances:
 
 ```less
@@ -358,8 +358,6 @@ Feel free to hate on the organizational approach as it was a few years ago and I
 
 Speaking of dead dogs (because apparently that’s the sort of topic I prefer my phrases to focus on), I am really tired. Hopefully this helped. Again, let me know in the comments if you have some crazy regex ish you want to tackle together!
 
+---
 
-
-
-<hr>
-<small>I am Jake Albaugh and am going to write this bio in first person. These days, I write on CodePen because I care more about it and you than I do about my personal site. Read more articles via [my CodePen blog page](http://codepen.io/jakealbaugh/blog/). View my work on [my CodePen profile](http://codepen.io/jakealbaugh/). Or if you’re a hip millennial, “get at me” on my twitter [@jake_albaugh](http://twitter.com/jake_albaugh).</small>
+I am Jake Albaugh and am going to write this bio in first person. These days, I write on CodePen because I care more about it and you than I do about my personal site. Read more articles via [my CodePen blog page](http://codepen.io/jakealbaugh/blog/). View my work on [my CodePen profile](http://codepen.io/jakealbaugh/). Or if you’re a hip millennial, “get at me” on my twitter [@jake_albaugh](http://twitter.com/jake_albaugh).
